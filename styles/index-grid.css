@@ -1,0 +1,89 @@
+body{
+  background: radial-gradient(#bdbdbd08, #000);
+}
+
+
+.outline{
+  display: grid;
+  position: relative;
+  margin: auto;
+
+  height: 100vh;
+  width: 80%;
+
+  grid-template-areas: "borderL  name  borderR"
+                       "borderL  object borderR"
+                       "borderL  build  borderR";
+  grid-template-columns: 3rem   1fr 3rem;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.border{
+  background: url('../assets/blender_extruder_arm.png') center center no-repeat;
+  background-size: cover;
+}
+
+.bord-l{
+    grid-area:borderL;
+}
+
+.bord-r{
+    grid-area: borderR;
+}
+
+.name{
+  grid-area:name;
+  margin:auto;
+
+  height:5rem;
+  width:40rem;
+
+  text-align: center;
+}
+
+
+.build-plate{
+  grid-area: build;
+  margin:0 auto;
+  /* position: relative;
+  top:0; */
+
+  height:3rem;
+  width:80%;
+
+  background: black;
+}
+
+.object{
+  grid-area:object;
+  position: relative;
+  margin:auto;
+  bottom:0rem;
+  z-index: 0;
+
+  height:15rem;
+  width:15rem;
+
+  background: url('../assets/baja 1.jpg');
+}
+
+.extruder{
+  display: none;
+  position: relative;
+  z-index: 1;
+
+  height: 35rem;
+  width:100vh;
+
+  background: url('../assets/blender_extruder_final.png') center center no-repeat;
+  background-size: 150rem auto;
+  overflow: hidden; /* not sure if necissary*/
+  border:1px solid red;
+}
+
+
+/* fonts */
+h1{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 4rem;
+}
