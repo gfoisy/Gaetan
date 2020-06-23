@@ -52,17 +52,22 @@ body{
 }
 
 .object{
-  grid-area:object;
+  grid-area: object;
   position: absolute;
-  margin:auto;
-  bottom:0rem;
+  display: flex;
+  margin: auto;
+  bottom: 0rem;
   z-index: 0;
 
-  height:15rem;
-  width:15rem;
+  width:100%;
+}
 
-  background: url('../assets/baja 1.jpg');
-  background-size: contain;
+.object img{
+
+  margin:auto;
+
+  width:15rem;
+  height: 15rem;
 }
 
 .extruder{
@@ -98,5 +103,5 @@ h1{
 
   .outline{
     grid-template-columns: 2rem   1fr 2rem;
-    grid-template-rows: 3fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr .5fr;
   }
