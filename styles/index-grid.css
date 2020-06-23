@@ -1,5 +1,5 @@
 body{
-  background: radial-gradient(#bdbdbd08, #000);
+  /* background: light-grey; */
 }
 
 
@@ -63,16 +63,27 @@ body{
 }
 
 .object img{
-
   margin:auto;
 
   width:15rem;
   height: 15rem;
 }
 
+.white{
+  margin:auto;
+  /* position:relative; */
+  /* display: inline; */
+  z-index: 1;
+
+  height:10rem;
+  width:15rem;
+
+  border: 4px solid green;
+}
+
 .extruder{
-  display: none;
-  position: relative;
+  /* display: none; */
+  position: absolute;
   z-index: 1;
 
   height: 35rem;
