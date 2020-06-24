@@ -48,7 +48,8 @@ body{
   height:3rem;
   width:80%;
 
-  background: black;
+  background: url('../assets/build_plate.png') center top no-repeat;
+  background-size: contain;
 }
 
 .object{
