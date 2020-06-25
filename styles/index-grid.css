@@ -1,5 +1,6 @@
 body{
   /* background: light-grey; */
+  overflow:hidden;
 }
 
 
@@ -105,6 +106,7 @@ h1{
 
 
 @media only screen and (max-width:850px){
+
   .outline{
     width:100%;
   }
