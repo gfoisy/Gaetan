@@ -5,35 +5,37 @@ body{
 
 
 .outline{
-  display: grid;
+  display: flex;
   position: relative;
   margin: auto;
 
   height: 100vh;
   width: 80%;
 
-  grid-template-areas: "borderL  name  borderR"
-                       "borderL  object borderR"
-                       "borderL  build  borderR";
-  grid-template-columns: 3rem   1fr 3rem;
-  grid-template-rows: 1fr 1fr 5rem;
+  border:1px solid red;
 }
 
-.border{
-  background: url('../assets/blender_extruder_arm.png') center center no-repeat;
-  background-size: cover;
+.printer{
+  position: relative;
+  margin:0 auto;
+
+  height:100vh;
+  width:100%;
+  /* overflow: hidden; */
+
+  background: url('../assets/non-perspective-background_edited.png') center top no-repeat;
+  background-size: contain;
+  border:1px solid green;
 }
 
-.bord-l{
-    grid-area:borderL;
-}
+.printer img{
 
-.bord-r{
-    grid-area: borderR;
+
+  width:100%;
+
 }
 
 .name{
-  grid-area:name;
   margin:auto;
 
   /* width:40rem; */
@@ -41,21 +43,7 @@ body{
   text-align: center;
 }
 
-
-.build-plate{
-  grid-area: build;
-  margin:0 auto;
-
-  height:3rem;
-  width:80%;
-
-  background: url('../assets/build_plate.png') center top no-repeat;
-  background-size: contain;
-}
-
 .object{
-  grid-area: object;
-  position: absolute;
   display: flex;
   margin: auto;
   bottom: 0rem;
@@ -65,23 +53,14 @@ body{
 }
 
 .object img{
+  position: absolute;
   margin:auto;
 
   width:15rem;
   height: 15rem;
 }
 
-.white{
-  margin:auto;
-  /* position:relative; */
-  /* display: inline; */
-  z-index: 1;
 
-  height:10rem;
-  width:15rem;
-
-  border: 4px solid green;
-}
 
 .extruder{
   /* display: none; */
