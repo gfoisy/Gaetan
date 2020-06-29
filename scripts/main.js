@@ -1,6 +1,7 @@
+const extruder= document.getElementById('extruder');
+let steps=-65;
 
-
-var x=0;
-function print(){
-  x=x+1;
-}
+window.onwheel=function printGo(){
+extruder.style= 'left: '+steps+'rem;';
+steps=steps+1;
+};

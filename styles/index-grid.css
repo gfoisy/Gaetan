@@ -1,6 +1,8 @@
-body{
+*{
   /* background: light-grey; */
   overflow:hidden;
+  margin:0;
+  padding:0;
 }
 
 
@@ -12,28 +14,29 @@ body{
   height: 100vh;
   width: 80%;
 
-  border:1px solid red;
+
 }
 
 .printer{
   position: relative;
   margin:0 auto;
+  display: flex;
+  z-index: 2;
+  align-items: bottom;
 
-  height:100vh;
+  height:100%;
   width:100%;
-  /* overflow: hidden; */
-
-  background: url('../assets/non-perspective-background_edited.png') center top no-repeat;
-  background-size: contain;
-  border:1px solid green;
 }
 
 .printer img{
-
-
-  width:100%;
-
+  width:inherit;
 }
+
+
+
+
+
+
 
 .name{
   margin:auto;
@@ -56,6 +59,7 @@ body{
   position: absolute;
   margin:auto;
 
+
   width:15rem;
   height: 15rem;
 }
@@ -63,17 +67,24 @@ body{
 
 
 .extruder{
-  /* display: none; */
   position: absolute;
   z-index: 1;
+  margin:auto;
+  bottom:7.2%;
 
-  height: 35rem;
-  width:100vh;
+  height: 25rem;
+  width: 95%;
 
-  background: url('../assets/blender_extruder_final.png') center center no-repeat;
-  background-size: 150rem auto;
   overflow: hidden; /* not sure if necissary*/
-  border:1px solid red;
+}
+
+.extruder img{
+  position: relative;
+  margin: auto;
+  left: -65rem;
+
+  height:100%;
+  /* width:50rem; */
 }
 
 
