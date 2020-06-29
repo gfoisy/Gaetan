@@ -1,5 +1,4 @@
 *{
-  /* background: light-grey; */
   overflow:hidden;
   margin:0;
   padding:0;
@@ -68,9 +67,12 @@
 
 .extruder{
   position: absolute;
+  display: flex;
+  flex-direction: row;
   z-index: 1;
   margin:auto;
   bottom:7.2%;
+  left:2.5%;
 
   height: 25rem;
   width: 95%;
@@ -78,14 +80,23 @@
   overflow: hidden; /* not sure if necissary*/
 }
 
-.extruder img{
-  position: relative;
-  margin: auto;
-  left: -65rem;
-
+.truder{
   height:100%;
-  /* width:50rem; */
+  overflow: hidden;
 }
+
+.left{
+  position: relative;
+  right: 0;
+
+
+}
+
+.right{
+  position: relative;
+  left: 0;
+}
+
 
 
 /* fonts */
